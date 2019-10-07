@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>registro</title>
+        <link href="CSS/bootstrap.min.css" rel="stylesheet"/>
+        <link href="C:\Users\usuario\Desktop\DWES\ManuelMartinezChanivet\css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="C:\Users\usuario\Desktop\DWES\ManuelMartinezChanivet\js"></script>
+    </head>
+
+    <body>
+
+        <header><img src="banner.png" width="100%"/></header>
+    
+        <nav>
+            <div class="row" style="padding: 5px">
+                <div class="col - 2; tdInicio">
+                    <a href="index.html" class="inicio">Inicio</a>
+                </div>
+    
+                <div class="col - 2; tdInicio">
+                    <a href="registro.html" class="inicio">Registrarse</a>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="row">
+            <div class="col-10">
+                <form  style="width: 100%; text-align:center" action="" onsubmit="return validar(this)"></form>
+                    <table>
+                        <tr>
+                            <td>
+                                <b>*Nombre: </b>
+            
+                            </td>
+                            <td>
+                                <input type="text" id="nombre" size="20"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>*Apellido: </b>
+                            </td>
+                            <td>
+                                <input type="text" maxlength="20" size="30" id="apellido"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>*Edad: </b>
+                            </td>
+                            <td>
+                                <input type="number" maxlength="2" size="5" id="edad"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>*Nº móvil: </b>
+                            </td>
+                            <td>
+                                <input type="text" maxlength="9" size="15" id="movil"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>*Correo electrónico: </b>
+                            </td>
+                            <td>
+                                <input type="text" maxlength="30" size="40" id="correo"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>*Contraseña: </b>
+                            </td>
+                            <td>
+                                <input type="password" size="40" id="pass"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>*Repetir contraseña: </b>
+                            </td>
+                            <td>
+                                <input type="password" size="40" id="rPass"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="checkbox" id="check"/><b>Recordar </b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center">
+                                <input type="submit" value="Enviar" name="Enviar"/><input type="reset"/>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+    
+            <div class="col-2">
+                <aside>
+                    <h3>Animes más vistos de hoy</h3>
+                        <ol>
+                            <li>Dr. Stone</li>
+                            <li>Ennen no Shobutai</li>
+                            <li>Danmachi</li>
+                        </ol>
+                    </aside>
+                </div>
+            </div>
+    
+        <footer>
+            <p>Manuel Martínez Chanivet</p>
+        </footer>
+    
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <link href="JS/bootstrap.min.js" rel="stylesheet"/>
+    </body>
+</html>
