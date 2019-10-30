@@ -1,0 +1,24 @@
+nav {
+    background-color: cadetblue;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    padding-right: 15%;
+}
+
+section {
+    width: 100%;
+    text-align: center;
+}
+
+table {
+    border: solid 1px;
+    margin-left: 40%;
+}
+
+footer {
+    text-align: center;
+    background-color: cadetblue;
+}
