@@ -15,19 +15,20 @@
         <section>
             <?php
                 require_once 'insertar.php';
-                require_once 'conecta.php';
-                $sql="SELECT * FROM coches WHERE id=$_GET['id']";
+                include 'conecta.php';
+                $id = $_GET['id'];
+                $sql="select * from coches where id = ".$id;
                 $resultado=mysqli_query($conexion,$sql);
-                $coche=mysqli_fetch_assoc($resultado)
+
+                $coche=mysqli_fetch_array($resultado);
             ?>
-                <form action='insertar.php' method='post' id='formulario' name='formulario'>
-                <p>Marca: <input type='text' value=<?php $coche["marca"] ?> required name='marca' id='marca'/></p>
-                <p>Modelo: <input type='text' value=<?php $coche["modelo"] ?> required name='modelo' id='modelo'/></p>
-                <p>Precio: <input type='number' value=<?php $coche["precio"] ?> required name='precio' id='precio'/></p>
-                <p>Stock: <input type='number' value=<?php $coche["stock"] ?> required name='stock' id='stock'/></p>
+                <form action='modificar.php?id=<?=$id?>' method='post' id='formulario' name='formulario'>
+                <p>Marca: <input type='text' value=<?=$coche["marca"] ?> required name='marca' id='marca'/></p>
+                <p>Modelo: <input type='text' value=<?=$coche["modelo"] ?> required name='modelo' id='modelo'/></p>
+                <p>Precio: <input type='number' value=<?=$coche["precio"] ?> required name='precio' id='precio'/></p>
+                <p>Stock: <input type='number' value=<?=$coche["stock"] ?> required name='stock' id='stock'/></p>
                 <p><input type='submit' value='Enviar'> <input type='reset'/></p>
                 </form>
-            
         </section>
         <footer>Manuel Martínez Chanivet</footer>
     </body>
