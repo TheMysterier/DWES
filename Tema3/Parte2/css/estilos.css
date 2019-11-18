@@ -7,10 +7,10 @@ li {
     list-style: none;
     display: inline;
     background-color: cadetblue;
-    margin-right: 20%;
+    margin-right: 5%;
 }
 
-#menu{
+.menu{
     width: 100%;
     background-color: cadetblue;
 }
@@ -18,7 +18,7 @@ li {
 li:hover {
     list-style: none;
     display: inline;
-    padding-right: 15%;
+    margin-right: 5%;
     background-color: rgb(61, 101, 102);
 }
 
@@ -30,9 +30,57 @@ section {
 table {
     border: solid 1px;
     margin-left: 40%;
+    margin-top: 10px;
+}
+
+td{
+    border: solid 1px;
+    border-collapse: collapse;
+}
+
+th{
+    border: solid 1px;
+    border-collapse: collapse;
+}
+
+tr{
+    border: solid 1px;
+    border-collapse: collapse;
 }
 
 footer {
+    margin-top:15px;
+    height:50px;
     text-align: center;
     background-color: cadetblue;
+}
+
+#registrarse {
+    background-color: cadetblue;
+    margin-top: 5px;
+}
+
+#registrarse:hover {
+    background-color: rgb(61, 101, 102);
+    margin-top: 5px;
+}
+
+#copy{
+    margin-top: 25px;
+}
+
+.campoRegis{
+    margin-left: 10px;
+}
+
+.formulario {
+    margin-top: 10px;
+}
+
+#form1 {
+    margin-left: 10px;
+}
+
+.error {
+    color: red;
 }
