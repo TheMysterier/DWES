@@ -1,4 +1,11 @@
-<?php require_once 'cuenta.php'; ?>
+<?php 
+    session_start();
+    include 'errores.php';
+    if(isset($_SESSION["username"])) {
+        $_SESSION["username"] = null;
+        session_destroy();
+    }
+?>
 <!DOCTYPE html>
 <html lang="es">
 	<head>
@@ -12,9 +19,9 @@
 	  </head>
 <body>
     <header><img src="http://www.maredu.com.br/wp-content/uploads/2017/09/banner-maredu-1.jpg" width="100%" height="200px"></header>
-     <?php 
+    <?php 
      	require_once 'conecta.php';
-      ?>
+    ?>
 
     <div class="row">
       	<div class="col-lg-6">
@@ -22,44 +29,65 @@
   	            <h2>Register</h2>
             </div>
 	
-            <form id="form1" method="post" action="index.php">
+            <form id="form1" method="post" action="cuenta.php">
                 <?php
-                    include 'errores.php';
+                    error1();
                 ?>
 
-                <div class="formulario">
-                    <label>Nombre: </label>
-                    <input class='campoRegis' type="text" name="username">
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Nombre: </label>
+
+                    <div class="col-sm-10">
+                        <input class='campoRegis' size="40px" type="text" name="username" required>
+                    </div>
                 </div>
 
-                <div class="formulario">
-                    <label>Apellidos: </label>
-                    <input class='campoRegis' type="text" name="apellidos">
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Apellidos: </label>
+
+                    <div class="col-sm-10">
+                        <input class='campoRegis' size="40px" type="text" name="apellidos" required>
+                    </div>
                 </div>
 
-                <div class="formulario">
-                    <label>Edad: </label>
-                    <input class='campoRegis' type="number" name="edad">
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Edad: </label>
+
+                    <div class="col-sm-10">
+                        <input class='campoRegis' size="40px" type="number" name="edad" required>
+                    </div>
                 </div>
 
-                <div class="formulario">
-                    <label>Email: </label>
-                    <input class='campoRegis' type="email" name="email">
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Email: </label>
+
+                    <div class="col-sm-10">
+                        <input class='campoRegis' size="40px" type="email" name="email" required>
+                    </div>
                 </div>
 
-                <div class="formulario">
-                    <label>Dirección: </label>
-                    <input class='campoRegis' type="text" name="direccion">
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Dirección: </label>
+
+                    <div class="col-sm-10">
+                        <input class='campoRegis' size="40px" type="text" name="direccion" required>
+                    </div>
                 </div>
 
-                <div class="formulario">
-                    <label>Contraseña: </label>
-                    <input class='campoRegis' type="password" name="password1">
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Contraseña: </label>
+
+                    <div class="col-sm-10">
+                        <input class='campoRegis' size="40px" type="password" name="password1" required>
+                    </div>
                 </div>
 
-                <div class="formulario">
-                    <label>Confirmar contraseña: </label>
-                    <input class='campoRegis' type="password" name="password2">
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Confirmar contraseña: </label>
+
+                    <div class="col-sm-10">
+                        <input class='campoRegis' size="40px" type="password" name="password2" required>
+                    </div>
                 </div>
 
                 <div class="formulario">
@@ -74,19 +102,24 @@
                 <h2>Login</h2>
             </div>
 
-            <form method="post" action="index.php">
+            <form method="post" action="cuenta.php">
                 <?php
-                    include 'errores.php';
+                    error2();
                 ?>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Nombre: </label>
 
-                <div class="formulario">
-                    <label>Nombre: </label>
-                    <input type="text" name="username" >
+                    <div class="col-sm-10">
+                        <input type="text" name="username" required>
+                    </div>
                 </div>
 
-                <div class="formulario">
-                    <label>Contraseña: </label>
-                    <input type="password" name="password">
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Contraseña: </label>
+
+                    <div class="col-sm-10">
+                        <input type="password" name="password" required>
+                    </div>
                 </div>
 
                 <div class="formulario">

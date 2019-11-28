@@ -66,6 +66,9 @@
             $_SESSION['username'] = $username;
             $_SESSION['success'] = "Registrado satisfactoriamente";
             header('location: index.php');
+        } else {
+            $_SESSION['error1'] = $errors;
+            header("Location: index.php");
         }
     }
 
@@ -88,10 +91,11 @@
 
             if (mysqli_num_rows($results) == 1) {
                 $_SESSION['username'] = $username;
-                $_SESSION['success'] = "Logeado satisfactoriamente";
                 header('location: listarCoches.php');
             } else {
                 array_push($errors, "Usuario o contraseña incorrectos");
+                $_SESSION['error2'] = $errors;
+                header("Location: index.php");
             }
         }
     }
