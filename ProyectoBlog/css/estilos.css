@@ -1,0 +1,231 @@
+/*-----------------GENERAL-------------------*/
+.titulos {
+    margin-left: 10px;
+}
+
+.error {
+    color: red;
+}
+/*-----------------END GENERAL-------------------*/
+/*----------------HEADER-------------------------*/
+header {
+    margin-left: 10px;
+    transition: color 1s;
+    text-shadow: 2px 2px #a9a9a9;
+}
+
+header:hover {
+    color: #385bf3;
+    text-shadow: 2px 2px #a9a9a9;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    transition: color 1s;
+    text-shadow: 2px 2px #a9a9a9;
+}
+
+header a:hover {
+    text-decoration: none;
+    color: #385bf3;
+    text-shadow: 2px 2px #a9a9a9;
+}
+/*-----------------END HEADER-------------------*/
+/*----------------NAV-------------------------*/
+
+nav {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+ul {
+    background-color: #a9a9a9;
+    background-image: linear-gradient(#a9a9a9, #d4d4d4);
+    display: flex;
+    list-style: none;
+    border-radius: 20px;
+    border: 0.5px solid black;
+    border-collapse: collapse;
+}
+
+li {
+    background-color: transparent;
+    border-radius: 23px 23px 23px 23px;
+    -moz-border-radius: 23px 23px 23px 23px;
+    -webkit-border-radius: 23px 23px 23px 23px;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+li:hover {
+    background-color: #385bf3;
+    border-radius: 23px 23px 23px 23px;
+    -moz-border-radius: 23px 23px 23px 23px;
+    -webkit-border-radius: 23px 23px 23px 23px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    text-decoration: none;
+    color: white;
+}
+/*-----------------END NAV-------------------*/
+/*----------------SECTION-------------------------*/
+
+section {
+    margin-left: 80px;
+    background-color: #dadada;
+    border-radius: 23px 23px 23px 23px;
+    -moz-border-radius: 23px 23px 23px 23px;
+    -webkit-border-radius: 23px 23px 23px 23px;
+}
+
+.botones {
+    color: #385bf3;
+    background-color: transparent;
+    border-color: #385bf3;
+}
+
+.botones:hover {
+    
+    color: white;
+    background-color: #385bf3;
+    border-color: transparent;
+}
+
+#verEntradas {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+#verEntradas form select {
+    width: 100px;
+}
+
+#verEntradas form p {
+    text-align: left;
+}
+
+#botonera {
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.listaEntradas {
+    padding: 10px;
+}
+
+.entrada {
+    padding-left: 20px;
+}
+
+#tituloIconos {
+    display: flex;
+}
+
+.editarBorrar {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+}
+/*-----------------END SECTION-------------------*/
+/*-----------------ASIDE-------------------*/
+
+#buscar {
+    background-color: #dadada;
+    border-radius: 23px 23px 23px 23px;
+    -moz-border-radius: 23px 23px 23px 23px;
+    -webkit-border-radius: 23px 23px 23px 23px;
+    padding-bottom: 10px;
+    box-shadow: 2px 2px #888888;
+}
+
+#buscarForm {
+    margin-left: 10px;
+}
+
+#logging {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #dadada;
+    border-radius: 23px 23px 23px 23px;
+    -moz-border-radius: 23px 23px 23px 23px;
+    -webkit-border-radius: 23px 23px 23px 23px;
+    padding-bottom: 10px;
+    box-shadow: 2px 2px #888888;
+}
+
+#logearse {
+    display: flex;
+    flex-direction: column;
+}
+
+#registrar {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #dadada;
+    border-radius: 23px 23px 23px 23px;
+    -moz-border-radius: 23px 23px 23px 23px;
+    -webkit-border-radius: 23px 23px 23px 23px;
+    padding-bottom: 10px;
+    box-shadow: 2px 2px #888888;
+}
+
+#registrarse {
+    margin-left: 10px;
+}
+
+.formHerramientas {
+    width: 100%;
+}
+
+.formHerramientas button {
+    width: 100%;
+}
+
+#btnHerramientas {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.inputMargen {
+    margin-bottom: 10px;
+}
+
+#herramientas {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #dadada;
+    border-radius: 23px 23px 23px 23px;
+    -moz-border-radius: 23px 23px 23px 23px;
+    -webkit-border-radius: 23px 23px 23px 23px;
+    padding-bottom: 10px;
+    box-shadow: 2px 2px #888888;
+}
+/*-----------------END ASIDE-------------------*/
+/*-----------------FOOTER-------------------*/
+
+footer {
+    width: 100%;
+    margin-top:15px;
+    height:70px;
+    text-align: center;
+    background-color: #a9a9a9;
+    border: 0.5px solid black;
+    border-collapse: collapse;
+}
+/*-----------------END SECTION-------------------*/

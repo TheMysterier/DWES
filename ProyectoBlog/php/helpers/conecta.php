@@ -1,8 +1,8 @@
 <?php
     $servidor="localhost";
-    $usuario="jefecon";
+    $usuario="root";
     $clave="pestillo";
-    $bd="concesionario";
+    $bd="usuarios";
 
     $conexion=mysqli_connect($servidor,$usuario,$clave,$bd);
     if(mysqli_connect_errno()) {
