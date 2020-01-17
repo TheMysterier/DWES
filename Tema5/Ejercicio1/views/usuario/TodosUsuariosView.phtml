@@ -1,0 +1,8 @@
+<?php
+    while($user = $todosUsuarios->fetchObject()) {
+        echo $user->nombre." - ".$user->email." - ".$user->fecha;?>
+        <a href='index.php?c=Usuarios&a=delete&id=<?php  echo($user->id) ?>'>Eliminar</a>
+        <a href='index.php?c=Notas&a=seeNotas&id=<?php  echo($user->id) ?>'>Ver notas</a><br/><?php
+    }
+
+?>
