@@ -1,0 +1,40 @@
+<h2>Registrar oferta</h2>
+
+
+    <?php
+        if(isset($ofertas)) {
+            ?>
+            <form action="index.php?c=Oferta&a=GrabarOferta&id=<?=$oferta->getId()?>" method="POST" enctype="multipart/form-data">
+            <?php
+            while($datos = $ofertas->fetchObject()) {
+                ?>
+                    <label for="titulo">Titulo</label><br>
+                    <input type="text" name="titulo" value="<?=$datos->titulo?>" required/><br>
+
+                    <label for="imagen">Imagen</label><br>
+                    <input type="file" name="imagen" value="<?=$datos->imagen?>"/><br>
+
+                    <label for="descripcion">Descripción</label><br>
+                    <textarea name="descripcion" width="200px" height="100px" required><?=$datos->descripcion?></textarea><br>
+
+                    <input type="submit" name="Guardar" value="Guardar"/>
+                <?php
+            }
+        } else {
+            ?>
+                <form action="index.php?c=Oferta&a=GrabarOferta" method="POST" enctype="multipart/form-data">
+                <label for="titulo">Titulo</label><br>
+                <input type="text" name="titulo" required/><br>
+
+                <label for="imagen">Imagen</label><br>
+                <input type="file" name="imagen" required/><br>
+
+                <label for="descripcion">Descripción</label><br>
+                <textarea name="descripcion" width="200px" height="100px" required></textarea><br>
+
+                <input type="submit" name="Registrar" value="Registrar"/>
+            <?php
+        }
+    ?>
+    
+</form>

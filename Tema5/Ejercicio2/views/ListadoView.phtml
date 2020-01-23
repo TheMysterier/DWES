@@ -1,0 +1,10 @@
+<?php
+    while($dato = $todasOfertas->fetchObject()) {
+        echo "<p>".$dato->titulo." - <img width= 150px src='uploads/img/".$dato->imagen."'/> - ".$dato->descripcion.
+        "<a href='index.php?c=Oferta&a=Modificar&id=".$dato->id."'> Modificar </a><a href='index.php?c=Oferta&a=BorrarOferta&id=".$dato->id.
+        "'> Eliminar</a></p><br/>";
+    }
+
+    echo "<a href='index.php?c=Oferta&a=NuevaOferta&form=true'>Crear oferta</a>";
+
+?>
